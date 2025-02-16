@@ -9,9 +9,10 @@ interface UserInfo {
 //* Описывает объект с двумя обязательными строковыми полями:
 //* phone: string
 //* email: string
+//? readonly surname: string – поле только для чтения (нельзя менять).
 interface User extends UserInfo {
 	name: string;
-	surname: string;
+	readonly surname: string;
 	hieght?: number;
 }
 
