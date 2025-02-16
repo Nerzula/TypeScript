@@ -43,3 +43,13 @@ const customer: Customer = {
 //* Объект customer соответствует интерфейсу Customer.
 //* Внутри вложенный объект user полностью соответствует интерфейсу User (необязательное поле hieght можно не указывать).
 //* Поле bill — число, как требуется.
+
+//? Данный интерфейс принимает только цифры, на остальные значения будет выводить ошибки
+interface FromServer {
+	[name: string]: number;
+}
+
+const obj12: FromServer = {
+	ssaasdas: 123,
+	waawdawdw: 12,
+};
